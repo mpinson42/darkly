@@ -1,0 +1,4 @@
+f2a29020ef3132e01dd61df97fd33ec8d7fcd1388cc9601e7db691d17d4d6188
+#en fouillant dans le code source de la page on trouve des indication sur la modification de hader sur la page ducoup si on tape dans le terminale : 
+# curl -A ft_bornToSec -e https://www.nsa.gov/ http://10.11.200.199/\?page\=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c | grep flag
+# on obtien le flag
