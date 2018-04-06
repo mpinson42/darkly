@@ -1,2 +1,0 @@
-928D819FC19405AE09921A2B71227BD9ABA106F9D2D37AC412E9E5A750F1506D
-#dans page=media si on rajoute a la place de src=nsa par src=data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K on obtion le flag car l'url protej les injection normal mais pas en base 64 

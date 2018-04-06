@@ -1,0 +1,1 @@
+en uplodant une 'image' on utilise une route si on copy as curl et que on modify l'extantion du fichier en .php et que on | grep flag, on obtien le flag

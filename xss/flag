@@ -1,2 +1,1 @@
 0FBB54BBF7D099713CA4BE297E1BC7DA0173D8B3C21C1811B916A3A86652724E
-#il est possible de injecter du js <script>echo('oui');</script> dans la balise name de page=feedback ps: il faut set le maxleng de la balise a plus garand que 10
