@@ -1,1 +1,10 @@
 il y a un cookie hache en md5 : Iamadmin=false, qui faut mettre a true avec un autre hash md5
+
+document.cookie = "I_am_admin=b326b5062b2f0e69046810717534cb09"
+
+
+====
+
+
+Pour sécuriser cette faille :
+Il ne faut jamais avoir confiance dans les données envoyées par l’utilisateur. Pour savoir si quelqu’un est admin de façon fiable, il faut le lire depuis une base de donnée à partir de $_SESSION.

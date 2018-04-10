@@ -1,3 +1,7 @@
-en fouillant dans le code source de la page on trouve des indication sur la modification de hader sur la page ducoup si on tape dans le terminale : 
+en fouillant dans le code source de la page on trouve des indication sur la modification de header sur la page du coup si on tape dans le terminal : 
 curl -A ft_bornToSec -e https://www.nsa.gov/ http://10.11.200.199/\?page\=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c | grep flag
 on obtien le flag
+
+
+Il ne faut jamais faire confiance aux données utilisateurs, et là on est en plein dedans.
+On ne peut jamais être sûr d’où proviens la requête et du navigateur exact. On peut mentir. Ce n’est pas parce qu’on dit venir de nsa.gov qu’on vient effectivement de nsa.gov. C’est le “problème” des protocoles stateless décentralisé comme HTTP.

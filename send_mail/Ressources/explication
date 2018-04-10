@@ -1,1 +1,4 @@
-il y a une inpute cacher dans page=recover avec un mail en value il faut la modifier 
+il y a un input caché dans un formulaire POST dans page=recover avec un mail en value il faut la modifier pour avoir le flag
+
+
+Pour stocké une valeur de façon sécurisé, un input type=“hidden” ne suffit pas. Il faut le stocker côté back.

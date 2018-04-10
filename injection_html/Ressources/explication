@@ -1,1 +1,8 @@
-on peu modifier la value des input dans page=survey
+Si on modifie dans le code source de la page la value du grade sur 
+/index.php?page=survey
+On peut envoyer au serveur un grade plus grand qu’escompté.
+
+Le soucis est que le formulaire qui valide le grade n’est pas validé côté backend.
+
+Il faut *absolument* tout vérifier quand on interprète un formulaire. L’entrée doit être composée de 0 à 2 digits.
+L’avantage de cette faille, c’est que comme chaque vote est enregistré en BDD, on peut cleaner ceux qui ont profité de cette faille.

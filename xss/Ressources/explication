@@ -1,1 +1,3 @@
-il est possible de injecter du js <script>echo('oui');</script> dans la balise name de page=feedback ps: il faut set le maxleng de la balise a plus garand que 10
+il est possible de injecter du js <script>alert('oui');</script> dans la balise name de page=feedback
+
+Pour éviter une faille XSS il faut utiliser en PHP la fonction htmlspecialchars

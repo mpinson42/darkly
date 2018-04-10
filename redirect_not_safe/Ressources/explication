@@ -1,1 +1,3 @@
-quand on change la redirection du lien facebook par nimporte quoi le flage apparait
+quand on change la redirection du lien facebook par nimporte quoi le flage apparait  site="oui"
+
+Il faut faire une liste blanche des valeurs possibles.

@@ -1,1 +1,6 @@
 dans page=media si on rajoute a la place de src=nsa par src=data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K on obtion le flag car l'url protej les injection normal mais pas en base 64
+
+
+Pour fixer la faille :
+Déjà, en cas de Wrong Answer, c’est peut-être con d’afficher le src ?
+Ensuite, il faut faire une liste blanche des valeurs possibles.

@@ -1,1 +1,3 @@
-on peu remonter le dossier du server pour prendre d'autre fichier comme le /privaite/passwd
+on peu remonter le dossier du server pour prendre d'autre fichier comme le page=../../../../../../../etc/passwd
+
+Pour éviter ce genre de faille, il faut faire une liste blanche des valeurs possibles.

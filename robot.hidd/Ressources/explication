@@ -1,2 +1,5 @@
-#dans robots.txt qui est le fichier permettant de rendre inaxessible les fichier par les moteur de recherche on peu voir le fichier ./hidden
+#dans robots.txt qui est le fichier permettant de rendre inaxessible les fichier par les moteur de recherche on peu voir le fichier ./.hidden
 #qui contien une multitude de dossier contenent des readme le faut donc lancer un script pour trouver le hash md5 a mettre en sha256 pour avoir le flag
+
+
+Les fichiers cachés ne sont pas cachés de façon sécurisées. Il faut toujours aller plus loin que simplement préfixer le dossier secret par un point.

@@ -19,7 +19,7 @@ function openlink(url, text){
 			if(req.responseText.indexOf(" ") == -1)
 			{
 				console.log(req.responseText)
-				exit()
+				return(0);
 			}
     	}
 	})

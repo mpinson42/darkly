@@ -1,1 +1,10 @@
 en uplodant une 'image' on utilise une route si on copy as curl et que on modify l'extantion du fichier en .php et que on | grep flag, on obtien le flag
+
+
+Quand on accepte un fichier sur son serveur, il faut toujours intégralement le renommer. Dans ce cas, ça suffirait à ne pas pouvoir y upload des scripts.
+
+Pour une image, on peut checker plein de choses :
+
+- La taille de l’image
+- Le magic number
+- Le poid du fichier

